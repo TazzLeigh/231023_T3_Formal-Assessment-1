@@ -39,47 +39,46 @@
     </nav>
 
     <!--Table-->
-    <div class="container">
-      <table class="table table-bordered table-hover">
+    <<div class="container">
+        <table class="table table-bordered table-hover">
           <thead>
-              <tr>
-                  <th>Image</th>
-                  <th>Plant Name</th>
-                  <th></th>
-              </tr>
+            <tr>
+              <th>Image</th>
+              <th>Plant Name</th>
+              <th>Price</th>
+            </tr>
           </thead>
           <tbody>
-              <!--Item 1-->
-              <tr>
-                  <td><img src="path/to/image1.jpg" alt="Image 1" class="img-fluid"></td>
-                  <td>Item 1</td>
-                  <td>Description of Item 1</td>
-                  <td>
-                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                  </td>
-              </tr>
-              <!--Item 2-->
-              <tr>
-                  <td><img src="path/to/image2.jpg" alt="Image 2" class="img-fluid"></td>
-                  <td>Item 2</td>
-                  <td>Description of Item 2</td>
-                  <td>
-                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                  </td>
-              </tr>
-              <!--Item 3-->
-              <tr>
-                <td><img src="path/to/image2.jpg" alt="Image 2" class="img-fluid"></td>
-                <td>Item 2</td>
-                <td>Description of Item 2</td>
-                <td>
-                  <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                </td>
+            <!--Item 1-->
+            <tr id="item1">
+              <td><img src="assets/plant1.png" alt="Image 1" class="img-fluid"></td>
+              <td>Plant1 </td>
+              <td>R200</td>
+              <td>
+                <button type="button" class="btn1 btn-primary btn-sm" onclick="removeItem('item1')">Remove</button>
+              </td>
             </tr>
-             
+            <!--Item 2-->
+            <tr id="item2">
+              <td><img src="/assets/plant3.png" alt="Image 2" class="img-fluid"></td>
+              <td>Plant 2</td>
+              <td>R210</td>
+              <td>
+                <button type="button" class="btn2 btn-primary btn-sm" onclick="removeItem('item2')">Remove</button>
+              </td>
+            </tr>
+            <!--Item 3-->
+            <tr id="item3">
+              <td><img src="assets/plant5.png" alt="Image 3" class="img-fluid"></td>
+              <td>Plant3</td>
+              <td>R230</td>
+              <td>
+                <button type="button" class="btn3 btn-primary btn-sm" onclick="removeItem('item3')">Remove</button>
+              </td>
+            </tr>
           </tbody>
-      </table>
-  </div>
+        </table>
+      </div>
   
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
